@@ -1,0 +1,70 @@
+
+/* Navbar */
+
+.navbar {
+
+	border-top: 1px solid $lightGray;
+	border-bottom: 1px solid $lightGray;
+	margin: 30px 0 0 0;
+
+	.grid {
+
+		width: 100%;
+		margin: 0;
+
+		.item {
+
+			min-height: 1px;
+			padding: 0;
+			margin: 0;
+
+			&:first-child {
+
+				text-align: left;
+
+			}
+
+			&:last-child {
+
+				text-align: right;
+
+			}
+
+		}
+
+	}
+
+}
+
+.navbar-nav {
+
+	display: block;
+	list-style-type: none;
+
+	.nav-item {
+
+		display: inline-block;
+		width: auto;
+		margin: 0 15px;
+
+		&:first-child {
+
+			margin: 0 15px 0 0;
+
+		}
+
+		&:last-child {
+
+			margin: 0 0 0 15px;
+
+		}
+
+	}
+
+	.dropdown-menu {
+
+		position: absolute;
+
+	}
+
+}

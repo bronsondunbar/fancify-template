@@ -1,0 +1,89 @@
+
+/* Grid */
+
+.grid {
+
+  display: flex;
+  flex-wrap: wrap;
+  margin: 15px -15px;
+
+  h1, h2, h3, h4 {
+
+    width: 100%;
+
+  }
+
+  .item {
+
+    display: flex;
+    flex: 1;
+    justify-content: center;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    min-height: 150px;
+    min-width: 25%;
+    margin: 15px;
+    padding: 15px;
+    transition: all 0.3s;
+
+    h1, h2, h3, h4 {
+
+      text-align: center;
+      font-weight: 400;
+      width: 100%;
+
+    }
+
+    form, p, a, ul {
+
+      width: 100%;
+
+    }
+
+    i {
+
+      text-align: center;
+      width: 100%;
+      margin: 0 0 10px;
+
+    }
+
+    img {
+
+      margin: 0;
+
+    }
+
+    @media (max-width: $tabletPortrait) {
+
+        min-width: 90%;
+
+    }
+
+    @media (max-width: $mobileLargeLandscape) {
+
+        min-width: 90%;
+
+    }
+
+    @media (max-width: $mobileLargePortrait) {
+
+        min-width: 90%;
+
+    }
+
+  }
+
+  @media (max-width: $tabletPortrait) {
+
+    min-width: 50%;
+
+  }
+
+  @media (max-width: $mobileLargePortrait) {
+
+    min-width: 100%;
+
+  }
+
+}

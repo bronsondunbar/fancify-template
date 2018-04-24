@@ -4,7 +4,7 @@
  * Copyright 2011-2017 Twitter, Inc.
  * Licensed under MIT (https://github.com/twbs/bootstrap/blob/master/LICENSE)
  */
-@import url("https://fonts.googleapis.com/css?family=Lora:400,700");
+@import url("https://fonts.googleapis.com/css?family=Lato:300,400,700");
 :root {
   --blue: #007bff;
   --indigo: #6610f2;
@@ -7227,11 +7227,117 @@ a.text-dark:focus, a.text-dark:hover {
 /* Backgrounds */
 /* Screen sizes */
 /* Typography */
-h1, h2, h3, h4 {
-  font-family: "Lora", sans-serif;
-  font-weight: 500;
-  text-align: center; }
+body {
+  font-family: "Arial", sans-serif;
+  font-size: 16px; }
+
+h1 {
+  font-family: "Lato", sans-serif;
+  font-weight: 400; }
+
+/* Grid */
+.grid {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  margin: 15px -15px; }
+  .grid h1, .grid h2, .grid h3, .grid h4 {
+    width: 100%; }
+  .grid .item {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-flex: 1;
+        -ms-flex: 1;
+            flex: 1;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    min-height: 150px;
+    min-width: 25%;
+    margin: 15px;
+    padding: 15px;
+    -webkit-transition: all 0.3s;
+    transition: all 0.3s; }
+    .grid .item h1, .grid .item h2, .grid .item h3, .grid .item h4 {
+      text-align: center;
+      font-weight: 400;
+      width: 100%; }
+    .grid .item form, .grid .item p, .grid .item a, .grid .item ul {
+      width: 100%; }
+    .grid .item i {
+      text-align: center;
+      width: 100%;
+      margin: 0 0 10px; }
+    .grid .item img {
+      margin: 0; }
+    @media (max-width: 768px) {
+      .grid .item {
+        min-width: 90%; } }
+    @media (max-width: 736px) {
+      .grid .item {
+        min-width: 90%; } }
+    @media (max-width: 425px) {
+      .grid .item {
+        min-width: 90%; } }
+  @media (max-width: 768px) {
+    .grid {
+      min-width: 50%; } }
   @media (max-width: 425px) {
-    h1, h2, h3, h4 {
-      text-align: center; } }
+    .grid {
+      min-width: 100%; } }
+
+/* Navbar */
+.navbar {
+  border-top: 1px solid #eeeeee;
+  border-bottom: 1px solid #eeeeee;
+  margin: 30px 0 0 0; }
+  .navbar .grid {
+    width: 100%;
+    margin: 0; }
+    .navbar .grid .item {
+      min-height: 1px;
+      padding: 0;
+      margin: 0; }
+      .navbar .grid .item:first-child {
+        text-align: left; }
+      .navbar .grid .item:last-child {
+        text-align: right; }
+
+.navbar-nav {
+  display: block;
+  list-style-type: none; }
+  .navbar-nav .nav-item {
+    display: inline-block;
+    width: auto;
+    margin: 0 15px; }
+    .navbar-nav .nav-item:first-child {
+      margin: 0 15px 0 0; }
+    .navbar-nav .nav-item:last-child {
+      margin: 0 0 0 15px; }
+  .navbar-nav .dropdown-menu {
+    position: absolute; }
+
+/* Dropdowns */
+.dropdown-menu {
+  border-radius: 0; }
+
+.dropdown-item.active, .dropdown-item:active {
+  background-color: #c00e44; }
+
+header {
+  text-align: center;
+  width: 1040px;
+  padding: 15px 0; }
+  header h1 {
+    padding: 30px 0 5px; }
+  header p {
+    text-transform: uppercase; }
 /*# sourceMappingURL=style.css.map */
