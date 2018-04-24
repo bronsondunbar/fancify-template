@@ -1,0 +1,16 @@
+
+/* Typography */
+
+h1, h2, h3, h4 {
+
+	font-family: $titleFontFamily;
+	font-weight: $titleFontWeight;
+	text-align: center;
+
+	@media (max-width: $mobileLargePortrait) {
+
+		text-align: center;
+
+	}
+
+}

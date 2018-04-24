@@ -1,0 +1,55 @@
+
+/* Fonts */
+
+@import url("https://fonts.googleapis.com/css?family=Lora:400,700");
+
+$titleFontFamily: "Lora", sans-serif;
+$titleFontWeight: 500;
+	
+$bodyFontFamily: "Arial", sans-serif;
+$bodyFontSize: 0.9rem;
+
+$navBarFontFamily: "Lora", sans-serif;
+$navBarFontWeight: 500;
+$navBarFontSize: 1.5em;
+
+/* Colours */
+
+$blue: #2bbde0;
+$pink: #e22d5d;
+$yellow: #ffd100;
+$peach: #f56e57;
+
+$black: #333333;
+$lightGray: #ededed;
+
+$darkBlue: #0D3758;
+$darkerBlue: #000333;
+$white: #ffffff;
+
+$turquoise: #4BB4C2;
+$green: #32B391;
+$purple: #9A70CF;
+
+/* Shadows */
+
+$lightBlueShadow: 0 0 20px rgba(6, 169, 225, 0.6);
+$darkBlueShadow: 0 0 20px rgba(13, 55, 88, 0.5);
+$blackShadow: -12px 0px 23px -14px rgba(0, 0, 0, 0.31);
+
+/* Transitions */
+
+$fastTransition: all 0.3s;
+
+/* Backgrounds */
+
+$grayGradient: linear-gradient(135deg, #F1F1F2 0%, #ffffff 100%);
+
+/* Screen sizes */
+
+$desktop: 1920px;
+$laptop: 1440px;
+$tabletLandscape: 1024px;
+$tabletPortrait: 768px;
+$mobileLargeLandscape: 736px;
+$mobileLargePortrait: 425px;
