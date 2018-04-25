@@ -28,6 +28,18 @@
 
 				text-align: right;
 
+				.nav-item {
+
+					margin: 0 5px;
+
+					&:last-child {
+
+						margin: 0 0 0 15px;
+
+					}
+
+				}
+
 			}
 
 		}
@@ -56,6 +68,33 @@
 		&:last-child {
 
 			margin: 0 0 0 15px;
+
+		}
+
+		form {
+
+			position: relative;
+
+			input {
+
+				border: none;
+				border-bottom: 1px solid $lightGray;
+
+			}
+
+		}
+
+		.nav-link {
+
+			color: $black;
+			transition: $fastTransition;
+			text-transform: uppercase;
+
+			&:hover, &:focus {
+
+				color: $maroon;
+
+			}
 
 		}
 
