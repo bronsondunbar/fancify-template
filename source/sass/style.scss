@@ -9,8 +9,10 @@
 
 header {
 
+	display: block;
 	text-align: center;
 	width: 1040px;
+	margin: 0 auto;
 	padding: 15px 0;
 
 	h1 {
@@ -25,6 +27,18 @@ header {
 
 	}
 
+	@media (max-width: $mobileLargePortrait) {
+
+		padding: 0 15px;
+
+	}
+
+	@media (max-width: $tabletLandscape) {
+
+		width: 100%;
+
+	}
+
 }
 
 img {
@@ -35,12 +49,124 @@ img {
 
 article {
 
+	display: block;
 	width: 1040px;
+	margin: 0 auto;
 	padding: 0 60px;
 
 	.grid {
 
 		margin: 15px 0;
+
+		.item {
+
+			@media (max-width: $mobileLargePortrait) {
+
+				padding: 0;
+
+			}
+
+		}
+
+	}
+
+	@media (max-width: $mobileLargePortrait) {
+
+		padding: 0 15px;
+
+	}
+
+	@media (max-width: $tabletLandscape) {
+
+		width: 100%;
+
+	}
+
+}
+
+
+footer {
+
+	display: block;
+	width: 1040px;
+	margin: 0 auto;
+
+	.grid {
+
+		width: 100%;
+		margin: 0;
+
+		.item {
+
+			min-height: 1px;
+			padding: 0;
+			margin: 0;
+
+			&:first-child {
+
+				text-align: left;
+
+				.navbar-nav {
+
+					&:first-child {
+
+						display: block !important;
+
+					}
+
+				}
+
+			}
+
+			&:last-child {
+
+				text-align: right;
+
+				.nav-item {
+
+					margin: 0 5px;
+
+					&:last-child {
+
+						margin: 0 0 0 15px;
+
+					}
+
+				}
+
+			}
+
+			.navbar-nav {
+
+				@media (max-width: $tabletLandscape) {
+
+					text-align: center;
+
+				}
+
+			}
+
+			@media (max-width: $tabletPortrait) {
+
+		    min-width: 100% !important;
+
+			}
+
+			@media (max-width: $tabletLandscape) {
+
+				justify-content: center;
+    		align-items: center;
+				min-width: 100%;
+
+			}
+
+		}
+
+	}
+
+	@media (max-width: $tabletLandscape) {
+
+		width: 100%;
 
 	}
 

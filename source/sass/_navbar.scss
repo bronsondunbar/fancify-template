@@ -22,6 +22,32 @@
 
 				text-align: left;
 
+				.navbar-nav {
+
+					&:first-child {
+
+						display: none;
+
+						@media (max-width: $tabletLandscape) {
+
+							display: block;
+
+						}
+
+					}
+
+					&:last-child {
+
+						@media (max-width: $tabletLandscape) {
+
+							display: none;
+
+						}
+
+					}
+
+				}
+
 			}
 
 			&:last-child {
@@ -41,6 +67,12 @@
 				}
 
 			}
+
+			@media (max-width: $tabletPortrait) {
+
+        min-width: 25%;
+
+    	}
 
 		}
 
@@ -79,6 +111,12 @@
 
 				border: none;
 				border-bottom: 1px solid $lightGray;
+
+			}
+
+			@media (max-width: $tabletLandscape) {
+
+				display: none;
 
 			}
 
