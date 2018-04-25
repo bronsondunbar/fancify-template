@@ -7229,7 +7229,7 @@ a.text-dark:focus, a.text-dark:hover {
 /* Typography */
 body {
   font-family: "Arial", sans-serif;
-  font-size: 16px; }
+  font-size: 18px; }
 
 h1 {
   font-family: "Lato", sans-serif;
@@ -7384,21 +7384,21 @@ header {
 img {
   margin: 15px 0 !important; }
 
-article {
+.default {
   display: block;
   width: 1040px;
   margin: 0 auto;
-  padding: 0 60px; }
-  article .grid {
+  padding: 0 160px; }
+  .default .grid {
     margin: 15px 0; }
     @media (max-width: 425px) {
-      article .grid .item {
+      .default .grid .item {
         padding: 0; } }
   @media (max-width: 425px) {
-    article {
+    .default {
       padding: 0 15px; } }
   @media (max-width: 1024px) {
-    article {
+    .default {
       width: 100%; } }
 
 footer {
