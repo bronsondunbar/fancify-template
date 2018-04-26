@@ -84,6 +84,74 @@ img {
 
 }
 
+.blog {
+
+	display: block;
+	width: 1040px;
+	margin: 0 auto;
+
+	.grid {
+
+		margin: -30px 0;
+
+		.item {
+
+			justify-content: flex-start;
+    	align-items: flex-start;
+    	padding: 30px 15px;
+
+			&:last-child {
+
+				min-width: 25%;
+				max-width: 25%;
+				border-left: 1px solid $lightGray;
+
+				@media (max-width: $mobileLargePortrait) {
+
+					min-width: 99%;
+
+				}
+
+				@media (max-width: $tabletLandscape) {
+
+					min-width: 98%;
+					max-width: 100%;
+					border: none;
+
+				}
+
+			}
+
+			@media (max-width: $mobileLargePortrait) {
+
+				padding: 0;
+
+			}
+
+		}
+
+		@media (max-width: $tabletLandscape) {
+
+			margin: 0;
+
+		}
+
+	}
+
+	@media (max-width: $mobileLargePortrait) {
+
+		padding: 0 15px;
+
+	}
+
+	@media (max-width: $tabletLandscape) {
+
+		width: 100%;
+
+	}
+
+}
+
 
 footer {
 
