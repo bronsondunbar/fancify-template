@@ -7401,6 +7401,45 @@ img {
     .default {
       width: 100%; } }
 
+.blog {
+  display: block;
+  width: 1040px;
+  margin: 0 auto; }
+  .blog .grid {
+    margin: -30px 0; }
+    .blog .grid .item {
+      -webkit-box-pack: start;
+          -ms-flex-pack: start;
+              justify-content: flex-start;
+      -webkit-box-align: start;
+          -ms-flex-align: start;
+              align-items: flex-start;
+      padding: 30px 15px; }
+      .blog .grid .item:last-child {
+        min-width: 25%;
+        max-width: 25%;
+        border-left: 1px solid #eeeeee; }
+        @media (max-width: 425px) {
+          .blog .grid .item:last-child {
+            min-width: 99%; } }
+        @media (max-width: 1024px) {
+          .blog .grid .item:last-child {
+            min-width: 98%;
+            max-width: 100%;
+            border: none; } }
+      @media (max-width: 425px) {
+        .blog .grid .item {
+          padding: 0; } }
+    @media (max-width: 1024px) {
+      .blog .grid {
+        margin: 0; } }
+  @media (max-width: 425px) {
+    .blog {
+      padding: 0 15px; } }
+  @media (max-width: 1024px) {
+    .blog {
+      width: 100%; } }
+
 footer {
   display: block;
   width: 1040px;
