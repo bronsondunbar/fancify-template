@@ -106,17 +106,17 @@ img {
 				max-width: 25%;
 				border-left: 1px solid $lightGray;
 
-				@media (max-width: $mobileLargePortrait) {
-
-					min-width: 99%;
-
-				}
-
 				@media (max-width: $tabletLandscape) {
 
 					min-width: 98%;
 					max-width: 100%;
 					border: none;
+
+				}
+
+				@media (max-width: $mobileLargePortrait) {
+
+					min-width: 90%;
 
 				}
 
