@@ -7231,9 +7231,16 @@ body {
   font-family: "Arial", sans-serif;
   font-size: 18px; }
 
-h1 {
+h1, h2, h3, h4, h5 {
   font-family: "Lato", sans-serif;
   font-weight: 400; }
+  h1 a, h2 a, h3 a, h4 a, h5 a {
+    color: #333333;
+    -webkit-transition: all 0.3s;
+    transition: all 0.3s; }
+    h1 a:hover, h1 a:focus, h2 a:hover, h2 a:focus, h3 a:hover, h3 a:focus, h4 a:hover, h4 a:focus, h5 a:hover, h5 a:focus {
+      text-decoration: none;
+      color: #c00e44; }
 
 /* Grid */
 .grid {
@@ -7374,6 +7381,11 @@ h1 {
 
 .dropdown-item.active, .dropdown-item:active {
   background-color: #c00e44; }
+
+a {
+  color: #c00e44;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s; }
 
 header {
   display: block;
