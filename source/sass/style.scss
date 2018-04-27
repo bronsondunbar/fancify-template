@@ -114,27 +114,29 @@ img {
 
 			&:last-child {
 
-				min-width: 25%;
-				max-width: 25%;
+				min-width: 35%;
+				max-width: 35%;
 				border-left: 1px solid $lightGray;
 
 				div {
 
 					margin: 0 0 0 -15px;
-					padding: 0 0 0 30px !important;
+					padding: 0 0 15px 30px !important;
 					width: 100%;
 
-					h4 {
+					h5 {
 
 						background: $black;
+						color: $white;
 						padding: 5px;
+						text-align: center;
 
 					}
 
 					@media (max-width: $tabletLandscape) {
 
 						margin: 0;
-						padding: 0;
+						padding: 0 !important;
 
 					}
 
@@ -159,13 +161,14 @@ img {
 			div {
 
 				position: relative;
-				padding: 60px 30px 0 0;
+				padding: 60px 30px 15px 0;
 				margin: 0 -45px 0 0;
 				border-bottom: 1px solid $lightGray;
+				width: 100%;
 
 				&:first-child {
 
-					padding: 0 30px 0 0;
+					padding: 0 30px 15px 0;
 
 				}
 
