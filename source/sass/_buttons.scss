@@ -4,9 +4,16 @@
 .btn-default {
 	
 	background: $white;
-	border: 1px solid $lightGray;
-	color: $gray;
+	border: 1px solid $maroon;
+	color: $maroon;
 	width: auto;
 	border-radius: 0;
+
+	&:hover, &:focus {
+
+		background: $maroon;
+		color: $white;
+
+	}
 
 }

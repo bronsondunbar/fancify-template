@@ -137,9 +137,15 @@ img {
 			div {
 
 				position: relative;
-				padding: 0 30px 0 0;
+				padding: 60px 30px 0 0;
 				margin: 0 -45px 0 0;
 				border-bottom: 1px solid $lightGray;
+
+				&:first-child {
+
+					padding: 0 30px 0 0;
+
+				}
 
 				.btn-default {
 
