@@ -7433,6 +7433,17 @@ img {
         min-width: 25%;
         max-width: 25%;
         border-left: 1px solid #eeeeee; }
+        .blog .grid .item:last-child div {
+          margin: 0 0 0 -15px;
+          padding: 0 0 0 30px !important;
+          width: 100%; }
+          .blog .grid .item:last-child div h4 {
+            background: #333333;
+            padding: 5px; }
+          @media (max-width: 1024px) {
+            .blog .grid .item:last-child div {
+              margin: 0;
+              padding: 0; } }
         @media (max-width: 1024px) {
           .blog .grid .item:last-child {
             min-width: 98%;
