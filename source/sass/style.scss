@@ -8,6 +8,13 @@
 @import "buttons";
 @import "dropdowns";
 
+a {
+
+	color: $maroon;
+	transition: $fastTransition;
+
+}
+
 header {
 
 	display: block;
