@@ -118,6 +118,28 @@ img {
 				max-width: 25%;
 				border-left: 1px solid $lightGray;
 
+				div {
+
+					margin: 0 0 0 -15px;
+					padding: 0 0 0 30px !important;
+					width: 100%;
+
+					h4 {
+
+						background: $black;
+						padding: 5px;
+
+					}
+
+					@media (max-width: $tabletLandscape) {
+
+						margin: 0;
+						padding: 0;
+
+					}
+
+				}
+
 				@media (max-width: $tabletLandscape) {
 
 					min-width: 98%;
