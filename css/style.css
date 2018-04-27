@@ -7358,10 +7358,13 @@ h1 {
 /* Buttons */
 .btn-default {
   background: #ffffff;
-  border: 1px solid #eeeeee;
-  color: #cdcdcd;
+  border: 1px solid #c00e44;
+  color: #c00e44;
   width: auto;
   border-radius: 0; }
+  .btn-default:hover, .btn-default:focus {
+    background: #c00e44;
+    color: #ffffff; }
 
 /* Dropdowns */
 .dropdown-menu {
@@ -7440,9 +7443,11 @@ img {
             min-width: 90%; } }
       .blog .grid .item div {
         position: relative;
-        padding: 0 30px 0 0;
+        padding: 60px 30px 0 0;
         margin: 0 -45px 0 0;
         border-bottom: 1px solid #eeeeee; }
+        .blog .grid .item div:first-child {
+          padding: 0 30px 0 0; }
         .blog .grid .item div .btn-default {
           position: absolute;
           bottom: -20px;
