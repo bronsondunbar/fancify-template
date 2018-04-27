@@ -7430,20 +7430,22 @@ img {
         text-align: center;
         color: #c00e44; }
       .blog .grid .item:last-child {
-        min-width: 25%;
-        max-width: 25%;
+        min-width: 35%;
+        max-width: 35%;
         border-left: 1px solid #eeeeee; }
         .blog .grid .item:last-child div {
           margin: 0 0 0 -15px;
-          padding: 0 0 0 30px !important;
+          padding: 0 0 15px 30px !important;
           width: 100%; }
-          .blog .grid .item:last-child div h4 {
+          .blog .grid .item:last-child div h5 {
             background: #333333;
-            padding: 5px; }
+            color: #ffffff;
+            padding: 5px;
+            text-align: center; }
           @media (max-width: 1024px) {
             .blog .grid .item:last-child div {
               margin: 0;
-              padding: 0; } }
+              padding: 0 !important; } }
         @media (max-width: 1024px) {
           .blog .grid .item:last-child {
             min-width: 98%;
@@ -7454,11 +7456,12 @@ img {
             min-width: 90%; } }
       .blog .grid .item div {
         position: relative;
-        padding: 60px 30px 0 0;
+        padding: 60px 30px 15px 0;
         margin: 0 -45px 0 0;
-        border-bottom: 1px solid #eeeeee; }
+        border-bottom: 1px solid #eeeeee;
+        width: 100%; }
         .blog .grid .item div:first-child {
-          padding: 0 30px 0 0; }
+          padding: 0 30px 15px 0; }
         .blog .grid .item div .btn-default {
           position: absolute;
           bottom: -20px;
