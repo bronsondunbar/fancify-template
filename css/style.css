@@ -7438,17 +7438,26 @@ img {
           -ms-flex-align: start;
               align-items: flex-start;
       padding: 30px 15px; }
-      .blog .grid .item:first-child span {
-        text-align: center;
-        color: #c00e44; }
+      .blog .grid .item:first-child {
+        padding: 30px 0 0 0;
+        margin: 0; }
+        .blog .grid .item:first-child span {
+          text-align: center;
+          color: #c00e44; }
+        .blog .grid .item:first-child div {
+          border-bottom: 1px solid #eeeeee; }
       .blog .grid .item:last-child {
         min-width: 35%;
         max-width: 35%;
+        padding: 0 15px;
         border-left: 1px solid #eeeeee; }
         .blog .grid .item:last-child div {
-          margin: 0 0 0 -15px;
-          padding: 0 0 15px 30px !important;
+          margin: 30px 0 0 -15px;
+          padding: 15px 0 15px 30px !important;
           width: 100%; }
+          .blog .grid .item:last-child div:first-child {
+            margin: 15px 0 0 0;
+            padding: 0 0 15px 30px !important; }
           .blog .grid .item:last-child div h5 {
             background: #333333;
             color: #ffffff;
@@ -7470,10 +7479,11 @@ img {
         position: relative;
         padding: 60px 30px 15px 0;
         margin: 0 -45px 0 0;
-        border-bottom: 1px solid #eeeeee;
         width: 100%; }
         .blog .grid .item div:first-child {
           padding: 0 30px 15px 0; }
+        .blog .grid .item div div {
+          border-bottom: 1px solid #eeeeee; }
         .blog .grid .item div .btn-default {
           position: absolute;
           bottom: -20px;
