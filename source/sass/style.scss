@@ -110,10 +110,19 @@ img {
 
     	&:first-child {
 
+    		padding: 30px 0 0 0;
+    		margin: 0;
+
     		span {
 
     			text-align: center;
     			color: $maroon;
+
+    		}
+
+    		div {
+
+    			border-bottom: 1px solid $lightGray;
 
     		}
 
@@ -123,13 +132,21 @@ img {
 
 				min-width: 35%;
 				max-width: 35%;
+				padding: 0 15px;
 				border-left: 1px solid $lightGray;
 
 				div {
 
-					margin: 0 0 0 -15px;
-					padding: 0 0 15px 30px !important;
+					margin: 30px 0 0 -15px;
+					padding: 15px 0 15px 30px !important;
 					width: 100%;
+
+					&:first-child {
+
+						margin: 15px 0 0 0;
+						padding: 0 0 15px 30px !important;
+
+					}
 
 					h5 {
 
@@ -170,12 +187,17 @@ img {
 				position: relative;
 				padding: 60px 30px 15px 0;
 				margin: 0 -45px 0 0;
-				border-bottom: 1px solid $lightGray;
 				width: 100%;
 
 				&:first-child {
 
 					padding: 0 30px 15px 0;
+
+				}
+
+				div {
+
+					border-bottom: 1px solid $lightGray;
 
 				}
 
