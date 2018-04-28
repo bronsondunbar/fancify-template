@@ -1,0 +1,28 @@
+
+/* Pagination */
+
+.pagination {
+		
+	padding: 30px 0;
+
+	.page-item {
+
+		margin-left: -1px;
+
+		.page-link {
+
+			color: $maroon;
+
+		}
+
+	}
+
+	.page-item.active .page-link {
+
+		background: $maroon;
+		border-color: $maroon;
+		color: $white;
+
+	}
+
+}
