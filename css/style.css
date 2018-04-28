@@ -7382,6 +7382,18 @@ h1, h2, h3, h4, h5 {
 .dropdown-item.active, .dropdown-item:active {
   background-color: #c00e44; }
 
+/* Pagination */
+.pagination {
+  padding: 30px 0; }
+  .pagination .page-item {
+    margin-left: -1px; }
+    .pagination .page-item .page-link {
+      color: #c00e44; }
+  .pagination .page-item.active .page-link {
+    background: #c00e44;
+    border-color: #c00e44;
+    color: #ffffff; }
+
 a {
   color: #c00e44;
   -webkit-transition: all 0.3s;
