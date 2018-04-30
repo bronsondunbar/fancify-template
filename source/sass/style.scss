@@ -111,7 +111,7 @@ img {
 
     	&:first-child {
 
-    		padding: 30px 0;
+    		padding: 30px 15px;
     		margin: 0;
 
     		span {
@@ -126,6 +126,12 @@ img {
     			border-bottom: 1px solid $lightGray;
 
     		}
+
+    		@media (max-width: $mobileLargePortrait) {
+
+					padding: 15px 0 0 0;
+
+				}
 
     	}
 
@@ -147,6 +153,12 @@ img {
 						margin: 15px 0 0 0;
 						padding: 0 0 15px 0 !important;
 
+						@media (max-width: $mobileLargePortrait) {
+
+							margin: 0 0 30px 0;
+
+						}
+
 					}
 
 					h5 {
@@ -158,10 +170,17 @@ img {
 
 					}
 
+					@media (max-width: $mobileLargePortrait) {
+
+						margin: 0 0 30px 0 !important;
+						padding: 0 0 15px 0;
+
+					}
+
 					@media (max-width: $tabletLandscape) {
 
 						margin: 0;
-						padding: 0 !important;
+						padding: 0;
 
 					}
 
@@ -178,6 +197,7 @@ img {
 				@media (max-width: $mobileLargePortrait) {
 
 					min-width: 90%;
+					padding: 0;
 
 				}
 
@@ -192,7 +212,14 @@ img {
 
 				&:first-child {
 
-					padding: 0 30px 15px 0;
+					padding: 0 0 15px 0;
+
+					@media (max-width: $mobileLargePortrait) {
+
+						padding: 0 0 15px 0;
+						margin: 0;
+
+					}
 
 				}
 
@@ -218,11 +245,18 @@ img {
 
 				}
 
+				@media (max-width: $mobileLargePortrait) {
+
+					margin: 30px 0 0 0;
+
+				}
+
 			}
 
 			@media (max-width: $mobileLargePortrait) {
 
 				padding: 0;
+				margin: 0;
 
 			}
 
