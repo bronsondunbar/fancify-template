@@ -7451,13 +7451,16 @@ img {
               align-items: flex-start;
       padding: 30px 15px; }
       .blog .grid .item:first-child {
-        padding: 30px 0;
+        padding: 30px 15px;
         margin: 0; }
         .blog .grid .item:first-child span {
           text-align: center;
           color: #c00e44; }
         .blog .grid .item:first-child div {
           border-bottom: 1px solid #eeeeee; }
+        @media (max-width: 425px) {
+          .blog .grid .item:first-child {
+            padding: 15px 0 0 0; } }
       .blog .grid .item:last-child {
         min-width: 35%;
         max-width: 35%;
@@ -7470,15 +7473,22 @@ img {
           .blog .grid .item:last-child div:first-child {
             margin: 15px 0 0 0;
             padding: 0 0 15px 0 !important; }
+            @media (max-width: 425px) {
+              .blog .grid .item:last-child div:first-child {
+                margin: 0 0 30px 0; } }
           .blog .grid .item:last-child div h5 {
             background: #333333;
             color: #ffffff;
             padding: 5px;
             text-align: center; }
+          @media (max-width: 425px) {
+            .blog .grid .item:last-child div {
+              margin: 0 0 30px 0 !important;
+              padding: 0 0 15px 0; } }
           @media (max-width: 1024px) {
             .blog .grid .item:last-child div {
               margin: 0;
-              padding: 0 !important; } }
+              padding: 0; } }
         @media (max-width: 1024px) {
           .blog .grid .item:last-child {
             min-width: 98%;
@@ -7486,14 +7496,19 @@ img {
             border: none; } }
         @media (max-width: 425px) {
           .blog .grid .item:last-child {
-            min-width: 90%; } }
+            min-width: 90%;
+            padding: 0; } }
       .blog .grid .item div {
         position: relative;
         padding: 60px 30px 15px 0;
         margin: 0 -45px 0 0;
         width: 100%; }
         .blog .grid .item div:first-child {
-          padding: 0 30px 15px 0; }
+          padding: 0 0 15px 0; }
+          @media (max-width: 425px) {
+            .blog .grid .item div:first-child {
+              padding: 0 0 15px 0;
+              margin: 0; } }
         .blog .grid .item div div {
           border-bottom: 1px solid #eeeeee; }
         .blog .grid .item div .btn-default {
@@ -7505,9 +7520,13 @@ img {
           .blog .grid .item div {
             padding: 0;
             margin: 0; } }
+        @media (max-width: 425px) {
+          .blog .grid .item div {
+            margin: 30px 0 0 0; } }
       @media (max-width: 425px) {
         .blog .grid .item {
-          padding: 0; } }
+          padding: 0;
+          margin: 0; } }
     @media (max-width: 1024px) {
       .blog .grid {
         margin: 0; } }
