@@ -7,3 +7,4 @@
 // @codekit-prepend 'lib/velocity.js'
 // @codekit-prepend 'lib/velocity.ui.js'
 
+// @codekit-prepend 'templateNavbar.js'

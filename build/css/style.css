@@ -5,6 +5,7 @@
  * Licensed under MIT (https://github.com/twbs/bootstrap/blob/master/LICENSE)
  */
 @import url("https://fonts.googleapis.com/css?family=Lato:300,400,700");
+@import url("https://fonts.googleapis.com/css?family=Lora:400,400i,700");
 :root {
   --blue: #007bff;
   --indigo: #6610f2;
@@ -7305,7 +7306,9 @@ h1, h2, h3, h4, h5 {
 .navbar {
   border-top: 1px solid #eeeeee;
   border-bottom: 1px solid #eeeeee;
-  margin: 30px 0 0 0; }
+  margin: 30px 0 0 0;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s; }
   .navbar .grid {
     width: 100%;
     margin: 0; }
@@ -7361,6 +7364,115 @@ h1, h2, h3, h4, h5 {
         color: #c00e44; }
   .navbar-nav .dropdown-menu {
     position: absolute; }
+
+.navbar-content {
+  background: #c00e44;
+  position: fixed;
+  width: 0;
+  height: 100%;
+  left: 0;
+  top: 0;
+  overflow-x: hidden;
+  z-index: 1050;
+  padding: 0;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+  color: #ffffff; }
+  .navbar-content div h1 {
+    text-align: center;
+    color: #ffffff; }
+  .navbar-content div img {
+    display: block;
+    margin: 30px auto;
+    width: 50%; }
+  .navbar-content div div div {
+    position: relative; }
+    .navbar-content div div div ul {
+      position: absolute;
+      z-index: 9999;
+      top: 0;
+      left: 0;
+      width: 100%;
+      list-style-type: none;
+      margin: 0 -15px 0 -5px;
+      padding: 0;
+      text-align: center; }
+      .navbar-content div div div ul .active {
+        background: #c00e44;
+        color: #ffffff; }
+      .navbar-content div div div ul li {
+        border-bottom: 1px solid #ffffff; }
+        .navbar-content div div div ul li a {
+          display: block;
+          padding: 15px;
+          color: #ffffff;
+          -webkit-transition: all 0.3s;
+          transition: all 0.3s;
+          text-decoration: none; }
+          .navbar-content div div div ul li a .fa:nth-of-type(1) {
+            padding: 0 10px 0 0; }
+          .navbar-content div div div ul li a .fa-chevron-right {
+            margin: 3px 30px 0 0;
+            float: right; }
+          .navbar-content div div div ul li a:hover, .navbar-content div div div ul li a:focus {
+            background: #ffffff;
+            color: #c00e44; }
+        .navbar-content div div div ul li:last-child {
+          border: none; }
+  .navbar-content div .search {
+    width: 100%;
+    padding: 0 19px; }
+    .navbar-content div .search a {
+      position: absolute;
+      top: -1px;
+      right: 20px;
+      color: #ffffff;
+      font-size: 1.5em; }
+      .navbar-content div .search a:hover, .navbar-content div .search a:focus {
+        text-decoration: none; }
+    .navbar-content div .search .fa-search {
+      position: absolute;
+      top: 5px;
+      left: 20px;
+      color: #ffffff;
+      font-size: 1.5em; }
+  .navbar-content div .breadcrumbs {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    list-style-type: none;
+    margin: 0;
+    padding: 5px 0 15px;
+    text-align: center;
+    width: 100%; }
+    .navbar-content div .breadcrumbs li {
+      display: inline;
+      border: none; }
+      .navbar-content div .breadcrumbs li:after {
+        content: ":";
+        padding: 0 5px 0 5px; }
+      .navbar-content div .breadcrumbs li:last-child:after {
+        content: none;
+        padding: 0; }
+  .navbar-content div .navbar-content-close-btn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+    color: #ffffff;
+    z-index: 5; }
+    .navbar-content div .navbar-content-close-btn:hover, .navbar-content div .navbar-content-close-btn:focus {
+      color: #ffffff;
+      text-decoration: none; }
+
+.navbar-title {
+  text-transform: capitalize;
+  margin: 40px 0 20px 0; }
+
+.fixed-top {
+  background: #ffffff;
+  margin: 0; }
 
 /* Buttons */
 .btn-default {
@@ -7418,6 +7530,17 @@ header {
 
 img {
   margin: 15px 0 !important; }
+
+blockquote {
+  font-family: "Lora";
+  font-style: italic;
+  font-size: 28px;
+  color: #c00e44;
+  text-align: center; }
+  blockquote::before {
+    content: "\""; }
+  blockquote::after {
+    content: "\""; }
 
 .default {
   display: block;
@@ -7557,13 +7680,19 @@ img {
     @media (max-width: 425px) {
       .content .author .item {
         padding: 0 !important; } }
-  .content .related h1, .content .related h2, .content .related h3, .content .related h4, .content .related h5 {
-    padding: 0 30px; }
-    @media (max-width: 425px) {
-      .content .related h1, .content .related h2, .content .related h3, .content .related h4, .content .related h5 {
-        padding: 0 15px; } }
-  .content .related a:hover, .content .related a:focus {
-    text-decoration: none !important; }
+  .content .related {
+    padding: 30px 0 0 0;
+    background: #eeeeee; }
+    .content .related h1, .content .related h2, .content .related h3, .content .related h4, .content .related h5 {
+      padding: 0 30px; }
+      @media (max-width: 425px) {
+        .content .related h1, .content .related h2, .content .related h3, .content .related h4, .content .related h5 {
+          padding: 0 15px; } }
+    .content .related a:hover, .content .related a:focus {
+      text-decoration: none !important; }
+    .content .related .item {
+      min-height: 1px;
+      padding: 0 15px; }
   @media (max-width: 425px) {
     .content {
       padding: 0 15px; } }

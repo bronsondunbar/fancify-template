@@ -56,6 +56,28 @@ img {
 
 }
 
+blockquote {
+
+	font-family: "Lora";
+	font-style: italic;
+	font-size: 28px;
+	color: $maroon;
+	text-align: center;
+
+	&::before {
+
+		content: "\"";
+
+	}
+
+	&::after {
+
+		content: "\"";		
+
+	}
+
+}
+
 .default {
 
 	display: block;
@@ -342,6 +364,9 @@ img {
 
 	.related {
 
+		padding: 30px 0 0 0;
+		background: $lightGray;
+
 		h1, h2, h3, h4, h5 {
 
 			padding: 0 30px;
@@ -361,6 +386,13 @@ img {
 				text-decoration: none !important;
 
 			}
+
+		}
+
+		.item {
+
+			min-height: 1px;
+			padding: 0 15px;
 
 		}
 
