@@ -7537,6 +7537,40 @@ img {
     .blog {
       width: 100%; } }
 
+.content {
+  display: block;
+  width: 1040px;
+  margin: 0 auto;
+  padding: 0 160px; }
+  .content .grid {
+    margin: 15px 0; }
+    @media (max-width: 425px) {
+      .content .grid .item {
+        padding: 0; } }
+  .content .author .item {
+    min-height: 1px; }
+    .content .author .item:first-child {
+      max-width: 25%;
+      padding: 0 0 0 15px; }
+    .content .author .item:last-child h1, .content .author .item:last-child h2, .content .author .item:last-child h3, .content .author .item:last-child h4, .content .author .item:last-child h5 {
+      text-align: left; }
+    @media (max-width: 425px) {
+      .content .author .item {
+        padding: 0 !important; } }
+  .content .related h1, .content .related h2, .content .related h3, .content .related h4, .content .related h5 {
+    padding: 0 30px; }
+    @media (max-width: 425px) {
+      .content .related h1, .content .related h2, .content .related h3, .content .related h4, .content .related h5 {
+        padding: 0 15px; } }
+  .content .related a:hover, .content .related a:focus {
+    text-decoration: none !important; }
+  @media (max-width: 425px) {
+    .content {
+      padding: 0 15px; } }
+  @media (max-width: 1024px) {
+    .content {
+      width: 100%; } }
+
 footer {
   display: block;
   width: 1040px;
