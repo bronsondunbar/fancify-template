@@ -284,6 +284,101 @@ img {
 
 }
 
+.content {
+
+	display: block;
+	width: 1040px;
+	margin: 0 auto;
+	padding: 0 160px;
+
+	.grid {
+
+		margin: 15px 0;
+
+		.item {
+
+			@media (max-width: $mobileLargePortrait) {
+
+				padding: 0;
+
+			}
+
+		}
+
+	}
+
+	.author {
+
+		.item {
+
+			min-height: 1px;
+
+			&:first-child {
+
+				max-width: 25%;
+				padding: 0 0 0 15px;
+
+			}
+
+			&:last-child {
+
+				h1, h2, h3, h4, h5 {
+
+					text-align: left;
+
+				}
+
+			}
+
+			@media (max-width: $mobileLargePortrait) {
+
+				padding: 0 !important;
+
+			}
+
+		}
+
+	}
+
+	.related {
+
+		h1, h2, h3, h4, h5 {
+
+			padding: 0 30px;
+
+			@media (max-width: $mobileLargePortrait) {
+
+				padding: 0 15px;
+
+			}
+
+		}
+
+		a {
+
+			&:hover, &:focus {
+
+				text-decoration: none !important;
+
+			}
+
+		}
+
+	}
+
+	@media (max-width: $mobileLargePortrait) {
+
+		padding: 0 15px;
+
+	}
+
+	@media (max-width: $tabletLandscape) {
+
+		width: 100%;
+
+	}
+
+}
 
 footer {
 
