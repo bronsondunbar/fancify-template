@@ -93,6 +93,12 @@ blockquote {
 
 		.item {
 
+			&:first-child {
+
+				margin: 0 0 15px 0;
+
+			}
+
 			@media (max-width: $mobileLargePortrait) {
 
 				padding: 0;
@@ -321,6 +327,16 @@ blockquote {
 
 		.item {
 
+			h1, h2, h3, h4, h5 {
+
+				&:first-child {
+
+					margin: 0 0 15px 0;
+
+				}
+
+			}
+
 			@media (max-width: $mobileLargePortrait) {
 
 				padding: 0;
@@ -342,6 +358,13 @@ blockquote {
 				max-width: 25%;
 				padding: 0 0 0 15px;
 
+				@media (max-width: $tabletLandscape) {
+
+					min-width: 100%;
+					max-width: 100%;
+
+				}
+
 			}
 
 			&:last-child {
@@ -349,6 +372,13 @@ blockquote {
 				h1, h2, h3, h4, h5 {
 
 					text-align: left;
+
+				}
+
+				@media (max-width: $tabletLandscape) {
+
+					min-width: 100%;
+					max-width: 100%;
 
 				}
 
@@ -366,7 +396,6 @@ blockquote {
 
 	.related {
 
-		padding: 30px 0 0 0;
 		background: $lightGray;
 
 		h1, h2, h3, h4, h5 {
@@ -393,8 +422,15 @@ blockquote {
 
 		.item {
 
+			max-width: 33%;
 			min-height: 1px;
 			padding: 0 15px;
+
+			@media (max-width: $tabletLandscape) {
+
+				max-width: 100%;
+
+			}
 
 		}
 
@@ -411,6 +447,14 @@ blockquote {
 		width: 100%;
 
 	}
+
+}
+
+.align-center {
+
+	display: block;
+	margin: 15px auto !important;
+	text-align: center;
 
 }
 
@@ -455,11 +499,11 @@ footer {
 
 					margin: 0 5px;
 
-					&:last-child {
+					// &:last-child {
 
-						margin: 0 0 0 15px;
+					// 	margin: 0 0 0 15px;
 
-					}
+					// }
 
 				}
 

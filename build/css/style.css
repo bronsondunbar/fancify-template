@@ -7549,6 +7549,8 @@ blockquote {
   padding: 0 160px; }
   .default .grid {
     margin: 15px 0; }
+    .default .grid .item:first-child {
+      margin: 0 0 15px 0; }
     @media (max-width: 425px) {
       .default .grid .item {
         padding: 0; } }
@@ -7667,6 +7669,8 @@ blockquote {
   padding: 0 160px; }
   .content .grid {
     margin: 15px 0; }
+    .content .grid .item h1:first-child, .content .grid .item h2:first-child, .content .grid .item h3:first-child, .content .grid .item h4:first-child, .content .grid .item h5:first-child {
+      margin: 0 0 15px 0; }
     @media (max-width: 425px) {
       .content .grid .item {
         padding: 0; } }
@@ -7675,13 +7679,20 @@ blockquote {
     .content .author .item:first-child {
       max-width: 25%;
       padding: 0 0 0 15px; }
+      @media (max-width: 1024px) {
+        .content .author .item:first-child {
+          min-width: 100%;
+          max-width: 100%; } }
     .content .author .item:last-child h1, .content .author .item:last-child h2, .content .author .item:last-child h3, .content .author .item:last-child h4, .content .author .item:last-child h5 {
       text-align: left; }
+    @media (max-width: 1024px) {
+      .content .author .item:last-child {
+        min-width: 100%;
+        max-width: 100%; } }
     @media (max-width: 425px) {
       .content .author .item {
         padding: 0 !important; } }
   .content .related {
-    padding: 30px 0 0 0;
     background: #eeeeee; }
     .content .related h1, .content .related h2, .content .related h3, .content .related h4, .content .related h5 {
       padding: 0 30px; }
@@ -7691,14 +7702,23 @@ blockquote {
     .content .related a:hover, .content .related a:focus {
       text-decoration: none !important; }
     .content .related .item {
+      max-width: 33%;
       min-height: 1px;
       padding: 0 15px; }
+      @media (max-width: 1024px) {
+        .content .related .item {
+          max-width: 100%; } }
   @media (max-width: 425px) {
     .content {
       padding: 0 15px; } }
   @media (max-width: 1024px) {
     .content {
       width: 100%; } }
+
+.align-center {
+  display: block;
+  margin: 15px auto !important;
+  text-align: center; }
 
 footer {
   display: block;
@@ -7719,8 +7739,6 @@ footer {
         text-align: right; }
         footer .grid .item:last-child .nav-item {
           margin: 0 5px; }
-          footer .grid .item:last-child .nav-item:last-child {
-            margin: 0 0 0 15px; }
       @media (max-width: 1024px) {
         footer .grid .item .navbar-nav {
           text-align: center; } }
