@@ -7543,12 +7543,22 @@ header {
     header h1 a {
       text-decoration: none; }
     header h1 span:first-child {
-      margin: -15px 0 0 0;
       vertical-align: middle;
       font-size: 1.5em; }
+      @media (max-width: 425px) {
+        header h1 span:first-child {
+          vertical-align: inherit;
+          font-size: 1em; } }
     header h1 span:last-child {
       vertical-align: middle;
       font-size: 1.5em; }
+      @media (max-width: 425px) {
+        header h1 span:last-child {
+          vertical-align: inherit;
+          font-size: 1em; } }
+    @media (max-width: 425px) {
+      header h1 {
+        font-size: 3em; } }
   header p {
     margin: -15px 0 0 0;
     text-transform: uppercase; }
@@ -7558,6 +7568,9 @@ header {
     header p:after {
       content: "•";
       padding: 0 5px; }
+    @media (max-width: 425px) {
+      header p {
+        margin: 15px 0 0 0; } }
   @media (max-width: 425px) {
     header {
       padding: 0 15px; } }

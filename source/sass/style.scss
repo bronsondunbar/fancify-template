@@ -53,18 +53,37 @@ header {
 
 			&:first-child {
 
-				margin: -15px 0 0 0;
 				vertical-align: middle;
 				font-size: 1.5em;
+
+				@media (max-width: $mobileLargePortrait) {
+
+					vertical-align: inherit;
+					font-size: 1em;
+
+				}
 
 			}
 
 			&:last-child {
 
 				vertical-align: middle;
-				font-size: 1.5em;				
+				font-size: 1.5em;
+
+				@media (max-width: $mobileLargePortrait) {
+
+					vertical-align: inherit;
+					font-size: 1em;
+
+				}
 
 			}
+
+		}
+
+		@media (max-width: $mobileLargePortrait) {
+
+			font-size: 3em;
 
 		}
 
@@ -86,6 +105,12 @@ header {
 
 			content: "•";
 			padding: 0 5px;
+
+		}
+
+		@media (max-width: $mobileLargePortrait) {
+
+			margin: 15px 0 0 0;
 
 		}
 
