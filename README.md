@@ -6,6 +6,8 @@ Template can be setup using CodeKit
 
 https://codekitapp.com/
 
+Preview https://bronsondunbar.github.io/fancify-template/
+
 ## License
 
 MIT License
@@ -29,3 +31,9 @@ AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
 LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
 OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 SOFTWARE.
+
+<img src="https://github.com/bronsondunbar/fancify-template/raw/master/screenshot.png" />
+
+<img src="https://github.com/bronsondunbar/fancify-template/raw/master/screenshot-2.png" />
+
+<img src="https://github.com/bronsondunbar/fancify-template/raw/master/screenshot-3.png" />
