@@ -1,3 +1,4 @@
+@charset "UTF-8";
 /*!
  * Bootstrap v4.0.0-beta.3 (https://getbootstrap.com)
  * Copyright 2011-2017 The Bootstrap Authors
@@ -7231,18 +7232,20 @@ a.text-dark:focus, a.text-dark:hover {
 /* Typography */
 body {
   font-family: "Arial", sans-serif;
-  font-size: 18px; }
+  font-size: 16px; }
 
 h1, h2, h3, h4, h5 {
-  font-family: "Lato", sans-serif;
-  font-weight: 400; }
+  font-family: "Lora", sans-serif;
+  font-weight: 400;
+  color: #333333;
+  margin: 15px 0; }
   h1 a, h2 a, h3 a, h4 a, h5 a {
     color: #333333;
     -webkit-transition: all 0.3s;
     transition: all 0.3s; }
     h1 a:hover, h1 a:focus, h2 a:hover, h2 a:focus, h3 a:hover, h3 a:focus, h4 a:hover, h4 a:focus, h5 a:hover, h5 a:focus {
       text-decoration: none;
-      color: #c00e44; }
+      color: #807f7f; }
 
 /* Grid */
 .grid {
@@ -7356,9 +7359,10 @@ h1, h2, h3, h4, h5 {
       color: #333333;
       -webkit-transition: all 0.3s;
       transition: all 0.3s;
-      text-transform: uppercase; }
+      text-transform: uppercase;
+      text-decoration: none; }
       .navbar-nav .nav-item .nav-link:hover, .navbar-nav .nav-item .nav-link:focus {
-        color: #c00e44; }
+        color: #807f7f; }
   .navbar-nav .dropdown-menu {
     position: absolute; }
 
@@ -7475,12 +7479,13 @@ h1, h2, h3, h4, h5 {
 /* Buttons */
 .btn-default {
   background: #ffffff;
-  border: 1px solid #c00e44;
-  color: #c00e44;
+  border: 1px solid #333333;
+  color: #333333;
   width: auto;
-  border-radius: 0; }
+  border-radius: 0;
+  text-decoration: none; }
   .btn-default:hover, .btn-default:focus {
-    background: #c00e44;
+    background: #333333;
     color: #ffffff; }
 
 /* Dropdowns */
@@ -7498,16 +7503,20 @@ h1, h2, h3, h4, h5 {
   .pagination .page-item {
     margin-left: -1px; }
     .pagination .page-item .page-link {
-      color: #c00e44; }
+      text-decoration: none;
+      color: #333333; }
   .pagination .page-item.active .page-link {
-    background: #c00e44;
-    border-color: #c00e44;
+    background: #333333;
+    border-color: #333333;
     color: #ffffff; }
 
 a {
-  color: #c00e44;
+  color: #333333;
+  text-decoration: underline;
   -webkit-transition: all 0.3s;
   transition: all 0.3s; }
+  a:hover, a:focus {
+    color: #807f7f; }
 
 header {
   display: block;
@@ -7516,11 +7525,39 @@ header {
   margin: 0 auto;
   padding: 15px 0; }
   header h1 {
-    font-family: 'Great Vibes';
-    font-size: 5em;
-    padding: 30px 0 5px; }
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    font-family: 'Lora';
+    text-transform: uppercase;
+    font-size: 4em;
+    line-height: 1.5em;
+    vertical-align: middle;
+    margin: 15px 0 0 0; }
+    header h1 a {
+      text-decoration: none; }
+    header h1 span:first-child {
+      margin: -15px 0 0 0;
+      vertical-align: middle;
+      font-size: 1.5em; }
+    header h1 span:last-child {
+      vertical-align: middle;
+      font-size: 1.5em; }
   header p {
+    margin: -15px 0 0 0;
     text-transform: uppercase; }
+    header p:before {
+      content: "•";
+      padding: 0 5px; }
+    header p:after {
+      content: "•";
+      padding: 0 5px; }
   @media (max-width: 425px) {
     header {
       padding: 0 15px; } }
@@ -7535,7 +7572,7 @@ blockquote {
   font-family: "Lora";
   font-style: italic;
   font-size: 28px;
-  color: #c00e44;
+  color: #333333;
   text-align: center; }
   blockquote::before {
     content: "\""; }
@@ -7579,8 +7616,7 @@ blockquote {
         padding: 30px 15px;
         margin: 0; }
         .blog .grid .item:first-child span {
-          text-align: center;
-          color: #c00e44; }
+          text-align: center; }
         .blog .grid .item:first-child div {
           border-bottom: 1px solid #eeeeee; }
         @media (max-width: 425px) {
@@ -7671,6 +7707,11 @@ blockquote {
     margin: 15px 0; }
     .content .grid .item h1:first-child, .content .grid .item h2:first-child, .content .grid .item h3:first-child, .content .grid .item h4:first-child, .content .grid .item h5:first-child {
       margin: 0 0 15px 0; }
+    .content .grid .item span {
+      display: block;
+      width: 100%;
+      text-align: center;
+      color: #c00e44; }
     @media (max-width: 425px) {
       .content .grid .item {
         padding: 0; } }
@@ -7699,12 +7740,15 @@ blockquote {
       @media (max-width: 425px) {
         .content .related h1, .content .related h2, .content .related h3, .content .related h4, .content .related h5 {
           padding: 0 15px; } }
-    .content .related a:hover, .content .related a:focus {
-      text-decoration: none !important; }
+    .content .related a {
+      text-decoration: none; }
+      .content .related a:hover, .content .related a:focus {
+        text-decoration: none !important; }
     .content .related .item {
       max-width: 33%;
       min-height: 1px;
-      padding: 0 15px; }
+      padding: 0 15px;
+      margin: 0 15px; }
       @media (max-width: 1024px) {
         .content .related .item {
           max-width: 100%; } }

@@ -116,10 +116,11 @@
 			color: $black;
 			transition: $fastTransition;
 			text-transform: uppercase;
+      text-decoration: none;
 
 			&:hover, &:focus {
 
-				color: $maroon;
+				color: lighten($black, 30%);
 
 			}
 

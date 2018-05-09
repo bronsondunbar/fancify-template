@@ -11,8 +11,15 @@
 
 a {
 
-	color: $maroon;
+	color: $black;
+	text-decoration: underline;
 	transition: $fastTransition;
+
+	&:hover, &:focus {
+
+		color: lighten($black, 30%);
+
+	}
 
 }
 
@@ -26,15 +33,61 @@ header {
 
 	h1 {
 
-		font-family: 'Great Vibes';
-		font-size: 5em;
-		padding: 30px 0 5px;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		font-family: 'Lora';
+		text-transform: uppercase;
+		font-size: 4em;
+		line-height: 1.5em;
+		vertical-align: middle;
+		margin: 15px 0 0 0;
+
+		a {
+
+			text-decoration: none;
+
+		}
+
+		span {
+
+			&:first-child {
+
+				margin: -15px 0 0 0;
+				vertical-align: middle;
+				font-size: 1.5em;
+
+			}
+
+			&:last-child {
+
+				vertical-align: middle;
+				font-size: 1.5em;				
+
+			}
+
+		}
 
 	}
 
 	p {
 
+		margin: -15px 0 0 0;
 		text-transform: uppercase;
+
+		&:before {
+
+			content: "•";
+			padding: 0 5px;
+
+		}
+
+		&:after {
+
+			content: "•";
+			padding: 0 5px;
+
+		}
 
 	}
 
@@ -63,7 +116,7 @@ blockquote {
 	font-family: "Lora";
 	font-style: italic;
 	font-size: 28px;
-	color: $maroon;
+	color: $black;
 	text-align: center;
 
 	&::before {
@@ -147,7 +200,6 @@ blockquote {
     		span {
 
     			text-align: center;
-    			color: $maroon;
 
     		}
 
@@ -337,6 +389,15 @@ blockquote {
 
 			}
 
+			span {
+
+				display: block;
+				width: 100%;
+				text-align: center;
+				color: $maroon;
+
+			}
+
 			@media (max-width: $mobileLargePortrait) {
 
 				padding: 0;
@@ -412,6 +473,8 @@ blockquote {
 
 		a {
 
+			text-decoration: none;
+
 			&:hover, &:focus {
 
 				text-decoration: none !important;
@@ -425,6 +488,7 @@ blockquote {
 			max-width: 33%;
 			min-height: 1px;
 			padding: 0 15px;
+			margin: 0 15px;
 
 			@media (max-width: $tabletLandscape) {
 
@@ -498,12 +562,6 @@ footer {
 				.nav-item {
 
 					margin: 0 5px;
-
-					// &:last-child {
-
-					// 	margin: 0 0 0 15px;
-
-					// }
 
 				}
 

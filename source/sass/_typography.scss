@@ -12,6 +12,8 @@ h1, h2, h3, h4, h5 {
 
 	font-family: $titleFontFamily;
 	font-weight: $titleFontWeight;
+	color: $titleFontColor;
+	margin: 15px 0;
 
 	a {
 
@@ -21,7 +23,7 @@ h1, h2, h3, h4, h5 {
 		&:hover, &:focus {
 
 			text-decoration: none;
-			color: $maroon;
+			color: lighten($black, 30%);
 
 		}
 

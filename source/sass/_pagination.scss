@@ -11,7 +11,8 @@
 
 		.page-link {
 
-			color: $maroon;
+			text-decoration: none;
+			color: $black;
 
 		}
 
@@ -19,8 +20,8 @@
 
 	.page-item.active .page-link {
 
-		background: $maroon;
-		border-color: $maroon;
+		background: $black;
+		border-color: $black;
 		color: $white;
 
 	}
