@@ -27,7 +27,7 @@ header {
 
 	display: block;
 	text-align: center;
-	width: 1040px;
+	max-width: 1040px;
 	margin: 0 auto;
 	padding: 15px 0;
 
@@ -161,7 +161,7 @@ blockquote {
 .default {
 
 	display: block;
-	width: 1040px;
+	max-width: 1040px;
 	margin: 0 auto;
 	padding: 0 160px;
 
@@ -204,188 +204,34 @@ blockquote {
 .blog {
 
 	display: block;
-	width: 1040px;
+	max-width: 1040px;
 	margin: 0 auto;
 
 	.grid {
 
-		margin: -30px 0;
+		display: grid;
+		grid-template-columns: 2fr 1fr;
+  	grid-column-gap: 30px;
+  	max-width: 100%;
 
-		.item {
+  	.item {
 
-			justify-content: flex-start;
-    	align-items: flex-start;
-    	padding: 30px 15px;
+  		padding: 0;
+  		margin: 0;
 
-    	&:first-child {
+  	}
 
-    		padding: 30px 15px;
-    		margin: 0;
+  	.blog-item-content {
 
-    		span {
+  		border-right: 1px solid $lightGray;
 
-    			text-align: center;
+  	}
 
-    		}
+  	@media (max-width: $tabletLandscape) {
 
-    		div {
-
-    			border-bottom: 1px solid $lightGray;
-
-    		}
-
-    		@media (max-width: $mobileLargePortrait) {
-
-					padding: 15px 0 0 0;
-
-				}
-
-    	}
-
-			&:last-child {
-
-				min-width: 35%;
-				max-width: 35%;
-				padding: 0 15px;
-				border-left: 1px solid $lightGray;
-
-				div {
-
-					margin: 30px 0 0 0;
-					padding: 15px 0 15px 0 !important;
-					width: 100%;
-
-					&:first-child {
-
-						margin: 15px 0 0 0;
-						padding: 0 0 15px 0 !important;
-
-						@media (max-width: $mobileLargePortrait) {
-
-							margin: 0 0 30px 0;
-
-						}
-
-					}
-
-					h5 {
-
-						background: $black;
-						color: $white;
-						padding: 5px;
-						text-align: center;
-
-					}
-
-					@media (max-width: $mobileLargePortrait) {
-
-						margin: 0 0 30px 0 !important;
-						padding: 0 0 15px 0;
-
-					}
-
-					@media (max-width: $tabletLandscape) {
-
-						margin: 0;
-						padding: 0;
-
-					}
-
-				}
-
-				@media (max-width: $tabletLandscape) {
-
-					min-width: 98%;
-					max-width: 100%;
-					border: none;
-
-				}
-
-				@media (max-width: $mobileLargePortrait) {
-
-					min-width: 90%;
-					padding: 0;
-
-				}
-
-			}
-
-			div {
-
-				position: relative;
-				padding: 60px 30px 15px 0;
-				margin: 0 -45px 0 0;
-				width: 100%;
-
-				&:first-child {
-
-					padding: 0 0 15px 0;
-
-					@media (max-width: $mobileLargePortrait) {
-
-						padding: 0 0 15px 0;
-						margin: 0;
-
-					}
-
-				}
-
-				div {
-
-					border-bottom: 1px solid $lightGray;
-
-				}
-
-				.btn-default {
-
-					position: absolute;
-					bottom: -20px;
-					right: 15px;
-					max-width: 160px;
-
-				}
-
-				@media (max-width: $tabletLandscape) {
-
-					padding: 0;
-					margin: 0;
-
-				}
-
-				@media (max-width: $mobileLargePortrait) {
-
-					margin: 30px 0 0 0;
-
-				}
-
-			}
-
-			@media (max-width: $mobileLargePortrait) {
-
-				padding: 0;
-				margin: 0;
-
-			}
+			grid-template-columns: 1fr;
 
 		}
-
-		@media (max-width: $tabletLandscape) {
-
-			margin: 0;
-
-		}
-
-	}
-
-	@media (max-width: $mobileLargePortrait) {
-
-		padding: 0 15px;
-
-	}
-
-	@media (max-width: $tabletLandscape) {
-
-		width: 100%;
 
 	}
 
@@ -394,7 +240,7 @@ blockquote {
 .content {
 
 	display: block;
-	width: 1040px;
+	max-width: 1040px;
 	margin: 0 auto;
 	padding: 0 160px;
 
@@ -550,7 +396,7 @@ blockquote {
 footer {
 
 	display: block;
-	width: 1040px;
+	max-width: 1040px;
 	margin: 0 auto;
 
 	.grid {
