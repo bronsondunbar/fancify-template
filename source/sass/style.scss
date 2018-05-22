@@ -222,8 +222,23 @@ blockquote {
 
   	.blog-item-content {
 
+  		position: relative;
   		border-right: 1px solid $lightGray;
   		padding: 0 15px 0 0;
+
+  		.blog-item-content-item {
+
+  			position: relative;
+  			padding: 15px 0 15px 0;
+  			border-bottom: 1px solid $lightGray;
+
+  			&:first-child {
+
+  				padding: 0 0 15px 0;
+
+  			}
+
+  		}
 
   		@media (max-width: $tabletLandscape) {
 
@@ -237,6 +252,20 @@ blockquote {
   	.blog-item-sidebar {
 
   		padding: 0 0 0 15px;
+
+  		.blog-item-sidebar-item {
+
+  			position: relative;
+  			padding: 15px 0 15px 0;
+  			border-bottom: 1px solid $lightGray;
+
+  			&:first-child {
+
+  				padding: 0 0 15px 0;
+
+  			}
+
+  		}
 
   	}
 

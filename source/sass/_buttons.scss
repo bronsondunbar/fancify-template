@@ -18,3 +18,32 @@
 	}
 
 }
+
+.btn-center {
+
+	text-align: center;
+
+	.btn {
+
+		width: auto !important;
+
+	}
+
+}
+
+.btn-default-float-right {
+
+	position: absolute;
+	width: auto !important;
+	right: 0;
+	bottom: -20px;
+
+	@media (max-width: $tabletLandscape) {
+
+		position: relative;
+		width: 100% !important;
+		bottom: 0;
+
+	}
+
+}
