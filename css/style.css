@@ -7618,13 +7618,19 @@ blockquote {
   .blog .grid {
     display: grid;
     grid-template-columns: 2fr 1fr;
-    grid-column-gap: 30px;
     max-width: 100%; }
     .blog .grid .item {
       padding: 0;
       margin: 0; }
     .blog .grid .blog-item-content {
-      border-right: 1px solid #eeeeee; }
+      border-right: 1px solid #eeeeee;
+      padding: 0 15px 0 0; }
+      @media (max-width: 1024px) {
+        .blog .grid .blog-item-content {
+          padding: 0 15px;
+          border: none; } }
+    .blog .grid .blog-item-sidebar {
+      padding: 0 0 0 15px; }
     @media (max-width: 1024px) {
       .blog .grid {
         grid-template-columns: 1fr; } }
