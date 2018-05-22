@@ -7646,6 +7646,8 @@ blockquote {
         position: relative;
         padding: 15px 0 15px 0;
         border-bottom: 1px solid #eeeeee; }
+        .blog .grid .blog-item-content .blog-item-content-item span {
+          text-align: center; }
         .blog .grid .blog-item-content .blog-item-content-item:first-child {
           padding: 0 0 15px 0; }
       @media (max-width: 1024px) {
@@ -7660,6 +7662,10 @@ blockquote {
         border-bottom: 1px solid #eeeeee; }
         .blog .grid .blog-item-sidebar .blog-item-sidebar-item:first-child {
           padding: 0 0 15px 0; }
+        .blog .grid .blog-item-sidebar .blog-item-sidebar-item h5 {
+          background: #333333;
+          color: #ffffff;
+          padding: 5px; }
     @media (max-width: 1024px) {
       .blog .grid {
         grid-template-columns: 1fr; } }
