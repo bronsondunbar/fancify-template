@@ -211,7 +211,6 @@ blockquote {
 
 		display: grid;
 		grid-template-columns: 2fr 1fr;
-  	grid-column-gap: 30px;
   	max-width: 100%;
 
   	.item {
@@ -224,6 +223,20 @@ blockquote {
   	.blog-item-content {
 
   		border-right: 1px solid $lightGray;
+  		padding: 0 15px 0 0;
+
+  		@media (max-width: $tabletLandscape) {
+
+				padding: 0 15px;
+				border: none;
+
+			}
+
+  	}
+
+  	.blog-item-sidebar {
+
+  		padding: 0 0 0 15px;
 
   	}
 
