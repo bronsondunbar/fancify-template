@@ -7658,6 +7658,8 @@ blockquote {
           text-align: center; }
         .blog .grid .blog-item-content .blog-item-content-item:first-child {
           padding: 0 0 15px 0; }
+        .blog .grid .blog-item-content .blog-item-content-item:last-child {
+          border: none; }
       @media (max-width: 1024px) {
         .blog .grid .blog-item-content {
           padding: 0 15px;
@@ -7670,6 +7672,8 @@ blockquote {
         border-bottom: 1px solid #eeeeee; }
         .blog .grid .blog-item-sidebar .blog-item-sidebar-item:first-child {
           padding: 0 0 15px 0; }
+        .blog .grid .blog-item-sidebar .blog-item-sidebar-item:last-child {
+          border: none; }
         .blog .grid .blog-item-sidebar .blog-item-sidebar-item h5 {
           background: #333333;
           color: #ffffff;
