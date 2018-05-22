@@ -7299,6 +7299,9 @@ h1, h2, h3, h4, h5 {
     @media (max-width: 425px) {
       .grid .item {
         min-width: 90%; } }
+  @media (max-width: 1024px) {
+    .grid {
+      margin: 15px 0; } }
   @media (max-width: 768px) {
     .grid {
       min-width: 50%; } }
@@ -7641,7 +7644,7 @@ blockquote {
     .blog .grid .blog-item-content {
       position: relative;
       border-right: 1px solid #eeeeee;
-      padding: 0 15px 0 0; }
+      padding: 0 15px 0 30px; }
       .blog .grid .blog-item-content .blog-item-content-item {
         position: relative;
         padding: 15px 0 15px 0;
@@ -7665,7 +7668,11 @@ blockquote {
         .blog .grid .blog-item-sidebar .blog-item-sidebar-item h5 {
           background: #333333;
           color: #ffffff;
-          padding: 5px; }
+          padding: 5px;
+          text-align: center; }
+      @media (max-width: 1024px) {
+        .blog .grid .blog-item-sidebar {
+          padding: 0 15px; } }
     @media (max-width: 1024px) {
       .blog .grid {
         grid-template-columns: 1fr; } }

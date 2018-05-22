@@ -74,6 +74,12 @@
 
   }
 
+  @media (max-width: $tabletLandscape) {
+
+    margin: 15px 0;
+
+  }
+
   @media (max-width: $tabletPortrait) {
 
     min-width: 50%;

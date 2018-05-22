@@ -224,7 +224,7 @@ blockquote {
 
   		position: relative;
   		border-right: 1px solid $lightGray;
-  		padding: 0 15px 0 0;
+  		padding: 0 15px 0 30px;
 
   		.blog-item-content-item {
 
@@ -276,10 +276,17 @@ blockquote {
   				background: $black;
   				color: $white;
   				padding: 5px;
+  				text-align: center;
 
   			}
 
   		}
+
+  		@media (max-width: $tabletLandscape) {
+
+				padding: 0 15px;
+
+			}
 
   	}
 
