@@ -232,6 +232,12 @@ blockquote {
   			padding: 15px 0 15px 0;
   			border-bottom: 1px solid $lightGray;
 
+  			span {
+
+  				text-align: center;
+
+  			}
+
   			&:first-child {
 
   				padding: 0 0 15px 0;
@@ -262,6 +268,14 @@ blockquote {
   			&:first-child {
 
   				padding: 0 0 15px 0;
+
+  			}
+
+  			h5 {
+
+  				background: $black;
+  				color: $white;
+  				padding: 5px;
 
   			}
 
