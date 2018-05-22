@@ -7488,6 +7488,22 @@ h1, h2, h3, h4, h5 {
     background: #333333;
     color: #ffffff; }
 
+.btn-center {
+  text-align: center; }
+  .btn-center .btn {
+    width: auto !important; }
+
+.btn-default-float-right {
+  position: absolute;
+  width: auto !important;
+  right: 0;
+  bottom: -20px; }
+  @media (max-width: 1024px) {
+    .btn-default-float-right {
+      position: relative;
+      width: 100% !important;
+      bottom: 0; } }
+
 /* Dropdowns */
 .dropdown-menu {
   border-radius: 0; }
@@ -7623,14 +7639,27 @@ blockquote {
       padding: 0;
       margin: 0; }
     .blog .grid .blog-item-content {
+      position: relative;
       border-right: 1px solid #eeeeee;
       padding: 0 15px 0 0; }
+      .blog .grid .blog-item-content .blog-item-content-item {
+        position: relative;
+        padding: 15px 0 15px 0;
+        border-bottom: 1px solid #eeeeee; }
+        .blog .grid .blog-item-content .blog-item-content-item:first-child {
+          padding: 0 0 15px 0; }
       @media (max-width: 1024px) {
         .blog .grid .blog-item-content {
           padding: 0 15px;
           border: none; } }
     .blog .grid .blog-item-sidebar {
       padding: 0 0 0 15px; }
+      .blog .grid .blog-item-sidebar .blog-item-sidebar-item {
+        position: relative;
+        padding: 15px 0 15px 0;
+        border-bottom: 1px solid #eeeeee; }
+        .blog .grid .blog-item-sidebar .blog-item-sidebar-item:first-child {
+          padding: 0 0 15px 0; }
     @media (max-width: 1024px) {
       .blog .grid {
         grid-template-columns: 1fr; } }
