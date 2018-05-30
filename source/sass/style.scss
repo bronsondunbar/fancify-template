@@ -501,6 +501,14 @@ footer {
 
 			}
 
+			&:nth-child(2) {
+
+				align-items: center;
+				justify-content: center;
+				text-align: center;
+
+			}
+
 			&:last-child {
 
 				text-align: right;
@@ -510,6 +518,12 @@ footer {
 					margin: 0 5px;
 
 				}
+
+			}
+
+			p {
+
+				margin: 0;
 
 			}
 
