@@ -3,13 +3,17 @@
 
 $(document).ready(function () {
 
-  $(window).bind("scroll", function () {
-    if ($(window).scrollTop() > 100) {
-        $("#navBar").addClass("fixed-top");
-    } else {
-        $("#navBar").removeClass("fixed-top");
-    }
-  });
+	var pageHeight = $(document).height();
+
+	if (pageHeight > 950) {
+		$(window).bind("scroll", function () {
+	    if ($(window).scrollTop() > 100) {
+	        $("#navBar").addClass("fixed-top");
+	    } else {
+	        $("#navBar").removeClass("fixed-top");
+	    }
+	  });
+	}
 
 	/* Navbar actions */
 
